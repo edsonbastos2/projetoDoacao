@@ -1,0 +1,26 @@
+#page-create-donate{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-create-donate header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#page-create-donate header a{
+  color: var(--full-color);
+  font-weight: bold;
+  display: flex;
+}
+
+#page-create-donate header a::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/seta-esquerda.svg');
+  margin-right: 16px;
+}
