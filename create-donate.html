@@ -17,6 +17,52 @@
           <span></span>
           Voltar para Home</a>
       </header>
+
+      <form action="">
+        <h1>Cadastro de doadores</h1>
+        <fieldset>
+          <legend>
+            <h2>Dados do doador</h2>
+          </legend>
+          <div class="field">
+            <label for="name">Nome do doador</label>
+            <input type="text" name="name" id="name" autocomplete="none">
+          </div>
+          <div class="field-group">
+            <div class="field">
+              <label for="andress">Endereço</label>
+              <input type="text" name="andress" id="andress" autocomplete="none">
+            </div>
+            <div class="field">
+              <label for="andress2">Número/Complemento</label>
+              <input type="text" name="andress2" id="andress2" autocomplete="none">
+            </div>
+          </div>
+          <div class="field-group">
+            <div class="field">
+              <label for="state">Estado</label>
+              <select name="uf" id="state" data-states="uf">
+                <option value="">Selecione o Estado</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="field">
+                <label for="city">Cidade</label>
+                <select name="city" id="city" data-states="city" disabled>
+                  <option value="">Selecione a cidade</option>
+                </select>
+                <input type="hidden" name="state" data-states="state">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <h2>Ítens para doação</h2>
+        </fieldset>
+        <button type="submit">Cadastrar doador</button>
+      </form>
   </div>
+
+  <script src="js/create-donate.js"></script>
 </body>
 </html>

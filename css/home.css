@@ -62,6 +62,7 @@
   display: flex;
   align-items: center;
   color: #FFF;
+  transition: background-color 400ms;
 }
 
 #page-home main a:hover{
