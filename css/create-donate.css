@@ -1,3 +1,4 @@
+
 #page-create-donate{
   width: 90%;
   max-width: 1100px;
@@ -101,4 +102,47 @@ form button{
 form button:hover{
   background-color: var(--hover-color);
   cursor: pointer;
+}
+
+.item-grid{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.item-grid li {
+  background-color: var(--font-background);
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.item-grid li span{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--full-color);
+}
+
+.item-grid li img{
+  width: 80px;
+}
+
+.item-grid li.selected{
+  background-color: #e1faec;
+  border: 2px solid #34cb79;
+}
+
+.item-grid li img,
+.item-grid li span{
+  pointer-events: none;
 }

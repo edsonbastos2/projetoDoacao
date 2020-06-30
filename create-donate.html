@@ -26,29 +26,29 @@
           </legend>
           <div class="field">
             <label for="name">Nome do doador</label>
-            <input type="text" name="name" id="name" autocomplete="none">
+            <input type="text" name="name" id="name" autocomplete="none" required>
           </div>
           <div class="field-group">
             <div class="field">
               <label for="andress">Endereço</label>
-              <input type="text" name="andress" id="andress" autocomplete="none">
+              <input type="text" name="andress" id="andress" autocomplete="none" required>
             </div>
             <div class="field">
               <label for="andress2">Número/Complemento</label>
-              <input type="text" name="andress2" id="andress2" autocomplete="none">
+              <input type="text" name="andress2" id="andress2" autocomplete="none" required>
             </div>
           </div>
           <div class="field-group">
             <div class="field">
               <label for="state">Estado</label>
-              <select name="uf" id="state" data-states="uf">
+              <select name="uf" id="state" data-states="uf" required>
                 <option value="">Selecione o Estado</option>
               </select>
             </div>
             <div class="field">
               <div class="field">
                 <label for="city">Cidade</label>
-                <select name="city" id="city" data-states="city" disabled>
+                <select name="city" id="city" data-states="city" disabled required>
                   <option value="">Selecione a cidade</option>
                 </select>
                 <input type="hidden" name="state" data-states="state">
@@ -57,7 +57,41 @@
           </div>
         </fieldset>
         <fieldset>
-          <h2>Ítens para doação</h2>
+          <legend>
+            <h2>Ítens para doação</h2>
+          </legend>
+          <div class="item-grid">
+            <li data-id="1">
+              <img src="assets/sofa.png" alt="">
+              <span>Móveis</span>
+            </li>
+        
+            <li data-id="2">
+              <img src="assets/brinquedos.png" alt="">
+              <span>Brinquedos</span>
+            </li>
+
+            <li data-id="3">
+              <img src="assets/televisao.png" alt="">
+              <span>Eletrodomesticos</span>
+            </li>
+
+            <li data-id="4">
+              <img src="assets/pao.png" alt="">
+              <span>Alimentos</span>
+            </li>
+
+            <li data-id="5">
+              <img src="assets/sapatos.png" alt="">
+              <span>Sapatos</span>
+            </li>
+
+            <li data-id="6">
+              <img src="assets/roupas.png" alt="">
+              <span>Roupas</span>
+            </li>
+          </div>
+          <input type="hidden" name="items">
         </fieldset>
         <button type="submit">Cadastrar doador</button>
       </form>
