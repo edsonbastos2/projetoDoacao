@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/responsivo.css">
   <title>Doação de coisas</title>
 </head>
@@ -21,22 +22,32 @@
       <main>
         <h1>Seu local para doação de qualquer coisa</h1>
         <p>Ajude pessoas que precisam, não é permetido doação de valores nem conbrança</p>
-        <a href="#"><span></span><strong>Encontre doadores</strong></a>
+        <a href="#" data-modal="click"><span></span><strong>Encontre doadores</strong></a>
       </main>
     </div>
   </div>
 
-  <div id="modal">
+  <div id="modal" class="hide">
+
     <div class="content">
       <div class="header">
         <h1>Procurar doadores</h1>
         <a href="">Fechar</a>
       </div>
       <form action="">
-        <label for="search"></label>
-        <!-- Parei em 01:00:08 -->
+        <label for="search">Cidade</label>
+        <div class="search field">
+          <input type="text" name="search" placeholder="Pesquise por cidade">
+          <button>
+            <img src="assets/procurar.png" alt="procurar">
+          </button>
+        </div>
       </form>
     </div>
   </div>
+
+  <script src="js/modal.js"></script>
 </body>
 </html>
+
+<!-- Parei em 01:25:30 -->

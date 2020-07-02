@@ -45,7 +45,7 @@ const itemsToCollect = document.querySelectorAll('.item-grid li')
 const collectedItem = document.querySelector('input[name=items]')
 
 // Função para adicionar e remover items 
-let selectedItem = [];
+let selectedItem = [1, 2, 3];
 function handleSelectedItem(event) {
   const itemLi = event.target;
   itemLi.classList.toggle('selected')
@@ -56,7 +56,7 @@ function handleSelectedItem(event) {
   // Pega os itens selecionados
   const alreadySelected = selectedItem.findIndex(item => item == itemId);
 
-
+  console.log(alreadySelected)
   // Se já estiver selecionado
   if (alreadySelected != -1) {
     // Tira da seleção

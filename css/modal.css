@@ -1,0 +1,79 @@
+#modal{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0, 0.9);
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 400ms;
+}
+#modal .content{
+  color: #fff;
+  width: 420px;
+  justify-content: center;
+}
+
+#modal .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#modal .header h1{
+  font-size: 36px;
+  line-height: 42px;
+}
+
+#modal .header a{
+  font-size: 0.01px;
+}
+
+#modal .header a::before{
+  content: '';
+  display: block;
+  background-image: url('../assets/fechar.png');
+  width: 32px;
+  height: 32px;
+}
+
+#modal form label{
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+#modal form .field{
+  display: flex;
+}
+
+#modal form input{
+  flex: 1;
+  background-color: var(--font-background);
+  border-radius: 8px 0 0 8px;
+  border: none;
+  font-size: 18px;
+  color: #6c6c80;
+  outline: none;
+  padding: 16px 24px;
+}
+
+#modal form button{
+  padding: 16px 24px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+
+#modal form button:hover{
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+#modal.hide{
+  display: none;
+}
