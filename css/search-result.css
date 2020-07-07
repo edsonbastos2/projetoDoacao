@@ -1,0 +1,80 @@
+
+#page-search-results{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-search-results header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#page-search-results header a{
+  color: var(--full-color);
+  font-weight: bold;
+  display: flex;
+}
+
+#page-search-results header a::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/seta-esquerda.svg');
+  margin-right: 16px;
+}
+
+main{
+  margin: 40px;
+}
+
+main h4{
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+main .cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+main img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+main .card h1{
+  margin: 32px 0 24px;
+  font-size: 36px;
+  line-height: 41px;
+  color: #242424;
+}
+
+main .card h3{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #e82f3e;
+}
+
+main .card p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c80;
+}
+
+body::after{
+  content: '';
+  position: fixed;
+  background-color: #fff;
+  top: 260px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
